@@ -1,0 +1,109 @@
+/* Import cool font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,255,255,0.3);
+  text-align: center;
+}
+
+/* Neon Dark Theme */
+.dark-theme {
+  background: #0f0f0f;
+  color: #00ffff;
+}
+
+.dark-theme input,
+.dark-theme button {
+  background: #111;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+}
+
+.dark-theme button:hover {
+  background-color: #00ffff;
+  color: #111;
+}
+
+/* Soft Light Theme */
+.light-theme {
+  background: #f4f4f4;
+  color: #222;
+}
+
+.light-theme input,
+.light-theme button {
+  background: #fff;
+  color: #222;
+  border: 1px solid #222;
+}
+
+.light-theme button:hover {
+  background: #222;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  padding: 8px;
+  width: 50%;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+pre {
+  text-align: left;
+  background: rgba(0, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px #0ff; }
+  50% { text-shadow: 0 0 20px #0ff; }
+  100% { text-shadow: 0 0 5px #0ff; }
+}
+
+h1 {
+  animation: glow 2s infinite ease-in-out;
+}
